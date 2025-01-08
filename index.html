@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuru Paunary</title>
     <style>
-        
         * {
             margin: 0;
             padding: 0;
@@ -17,12 +16,11 @@
             line-height: 1.6;
         }
 
-       
         header img {
-    width: 100%;
-    height: 40vh; /
-    object-fit: cover; 
-}
+            width: 100%;
+            height: 40vh;
+            object-fit: cover; 
+        }
 
         nav {
             background-color: #fffeff;
@@ -86,12 +84,21 @@
             border-radius: 8px;
         }
 
+        .full-width-banner {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
         footer {
-            background-color: #4b0082;
+            background-color: #4A3369;
             color: #fff;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 20px;
             margin-top: 20px;
+            position: relative;
         }
 
         footer a {
@@ -102,8 +109,25 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        .footer-banner {
+            
+
+            width: 100%;
+            height: 100%;
+        
+        }
+
+        .footer-info {
+            text-align: right;
+            margin-left: auto;
+            z-index: 1;
+        }
+
+        .footer-info p {
+            margin-bottom: 10px;
+        }
     </style>
-   
 </head>
 <body>
     <nav>
@@ -138,6 +162,10 @@
         </div>
     </section>
 
+    <section>
+        <img src="img/banner2.png" alt="Banner informativo adicional" class="full-width-banner">
+    </section>
+
     <section id="fotos" class="section">
         <h2>Fotos e Vídeos</h2>
         <img src="img/img1 (5).webp" alt="Foto indígena">
@@ -145,10 +173,13 @@
     </section>
 
     <footer id="contato">
-        <p>Contato:</p>
-        <a href="https://instagram.com/manurupaunary">Instagram</a> |
-        <a href="https://youtube.com/manurupaunary">YouTube</a>
-        <p>Local da Loja: SQN 216 Norte, Brasília</p>
+        <img src="img/banner2 (2).png" alt="Banner no rodapé" class="footer-banner">
+        <div class="footer-info">
+            <p>Contato:</p>
+            <a href="https://instagram.com/manurupaunary">Instagram</a> |
+            <a href="https://youtube.com/manurupaunary">YouTube</a>
+            <p>Local da Loja: SQN 216 Norte, Brasília</p>
+        </div>
     </footer>
 </body>
 </html>
