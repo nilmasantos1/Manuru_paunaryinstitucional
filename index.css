@@ -1,8 +1,10 @@
-        
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:ital,wght@0,100;0,300;0,700;1,300&family=Chela+One&display=swap');
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 body {
@@ -11,31 +13,31 @@ body {
 }
 
 header {
-    position: relative; /* Garante que os elementos dentro do header respeitem seu contexto */
+    position: relative;
     width: 100%;
 }
 
 header img {
     width: 100%;
     height: 40vh;
-    object-fit: cover; 
-    z-index: 0; 
+    object-fit: cover;
+    z-index: 0;
 }
 
 nav {
-    position: absolute; 
-    top: 0; 
-    right: 0; 
-    z-index: 10; 
-    background-color: transparent; 
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    background-color: transparent;
     display: flex;
     justify-content: right;
-    padding: 15px; 
+    padding: 15px;
 }
 
 nav a {
     margin: 0 15px;
-    color: #000000; 
+    color: #000000;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -57,47 +59,102 @@ nav a:hover {
 .section h2 {
     margin-bottom: 10px;
     color: #4b0082;
-    
+    font-family: 'Chela One', cursive; 
+    font-size: 2.5em;
 }
 
 .section p {
     margin-bottom: 10px;
 }
 
-
 .section img {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 15px;
 }
-
-.projects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+#projeto1, #projeto2, #projeto3 {
+    padding: 50px 0;
+    text-align: center;
+    font-size: 1.5em; /* Tamanho do texto igual ao de #pag-sobre .text h3 */
+    color: #030303; /* Cor do texto igual ao de #pag-sobre .text h3 */
+    margin-bottom: 10px; /* Mesma margem */
 }
 
-.project {
-    flex: 1 1 calc(50% - 10px);
-    background-color: #fff;
-    padding: 15px;
+#projeto1 h2, #projeto2 h2, #projeto3 h2 {
+    font-size: 2.3rem;
+    color: #4b0082; 
+    font-family: 'Chela One', cursive; /* Mantendo a fonte solicitada */
+    margin-bottom: 20px;
+}
+
+.projeto-container {
+    display: flex; /* Faz com que a imagem e o texto fiquem lado a lado */
+    justify-content: flex-start; /* Alinha a imagem e o texto à esquerda */
+    align-items: center; /* Alinha verticalmente */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+    width: 100%; /* Garante que o container ocupe toda a largura disponível */
+}
+
+#projeto1 .imagem, #projeto2 .imagem, #projeto3 .imagem {
+    text-align: left;  /* Alinha a imagem à esquerda */
+    flex: 0 0 auto; /* A imagem não ocupa uma largura fixa */
+    max-width: 300px; /* Limita o tamanho da imagem */
+    width: 30%;
+    margin-top: 10px
+}
+
+#projeto1 .imagem img, #projeto2 .imagem img, #projeto3 .imagem img {
+   ; width: 150% ;/* A imagem ocupa 100% da largura do seu container */
+    height: 50%; /* Mantém a proporção da imagem */
+    display: block;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.texto {
+    flex: 1; /* O texto ocupa o restante da largura */
+    max-width: 600px; /* Limita a largura do texto */
+    text-align: left;
+    line-height: 1.6;
+}
+
+.texto p {
+    font-size: 1.2rem; /* Tamanho do texto ajustado */
+    color: #333;
+    margin-top: 10px;
+    margin-left: 200px;
+    text-align: justify;
+}
+
+
+#fotos {
+    padding: 20px;
+    background-color: transparent; /* Sem fundo */
+}
+
+#fotos h2 {
+    font-size: 2.3rem;
+    color: #4b0082;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Chela One', cursive; /* Fonte para o título de Fotos */
+}
+
+#fotos img {
+    width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.project img {
-    width: 100%;
-    border-radius: 8px;
-}
-
 footer {
-    background-color: #4b0082; 
-    color: white; 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 20px; 
-    height: 200px; 
+    background-color: #4A3369;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 200px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
@@ -110,9 +167,9 @@ footer .logo-container {
 }
 
 footer .logo-container img {
-    width: 175px; 
+    width: 175px;
     height: auto;
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 footer .info {
@@ -130,10 +187,69 @@ footer .info p {
 }
 
 footer a {
-    color: #ffffff; 
+    color: #ffffff;
     text-decoration: underline;
 }
 
 footer a:hover {
     color: #ff8c00;
 }
+#pag-sobre {
+    padding: 0;  /* Remover padding */
+    margin: 0;  /* Remover margem */
+    background-color: #fff; /* Caixa branca */
+}
+
+#pag-sobre h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4b0082; 
+    font-family: 'Chela One', cursive; 
+}
+
+#pag-sobre .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Garantir que ocupe toda a largura */
+}
+
+#pag-sobre .section {
+    display: flex; /* Flexbox para imagens e texto ficarem lado a lado */
+    background-color: #fff; /* Garantir que a caixa tenha fundo branco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombras para as caixas */
+    padding: 20px;
+    width: 90%; /* A seção agora ocupa 90% da largura da tela */
+    margin: 0 auto 30px auto; /* Centralizar e adicionar margem inferior */
+}
+
+#pag-sobre .image {
+    flex: 0 0 50%;  /* A imagem ocupa 50% da largura */
+    margin-right: 20px;
+}
+
+#pag-sobre .image img {
+    width: 100%;
+    height: auto; /* A altura será ajustada de acordo com a proporção */
+    object-fit: cover; /* A imagem vai cobrir a área disponível */
+    border-radius: 10px;
+}
+
+#pag-sobre .text {
+    flex: 1; /* O texto ocupa o restante da largura */
+    text-align: left;
+    line-height: 1.6;
+}
+
+#pag-sobre .text h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #030303;
+}
+
+
+    #pag-sobre .image {
+        margin-bottom: 20px; /
+    }
+
