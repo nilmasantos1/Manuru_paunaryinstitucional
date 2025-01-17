@@ -7,6 +7,7 @@
     }
 }
 
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -50,7 +51,7 @@ nav a:hover {
 .section {
     padding: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 900px;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -78,6 +79,12 @@ nav a:hover {
     font-size: 1.5em; /* Tamanho do texto igual ao de #pag-sobre .text h3 */
     color: #030303; /* Cor do texto igual ao de #pag-sobre .text h3 */
     margin-bottom: 10px; /* Mesma margem */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto 30px auto;
 }
 
 #projeto1 h2, #projeto2 h2, #projeto3 h2 {
@@ -100,11 +107,11 @@ nav a:hover {
     flex: 0 0 auto; /* A imagem não ocupa uma largura fixa */
     max-width: 300px; /* Limita o tamanho da imagem */
     width: 30%;
-    margin-top: 10px
+    margin-top: 10px;
 }
 
 #projeto1 .imagem img, #projeto2 .imagem img, #projeto3 .imagem img {
-   ; width: 150% ;/* A imagem ocupa 100% da largura do seu container */
+    width: 150% ;/* A imagem ocupa 100% da largura do seu container */
     height: 50%; /* Mantém a proporção da imagem */
     display: block;
     margin-left: 50px;
@@ -130,6 +137,14 @@ nav a:hover {
 #fotos {
     padding: 20px;
     background-color: transparent; /* Sem fundo */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 900px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto 30px auto;
+    flex-wrap: wrap; /* Permite que as imagens quebrem para a próxima linha */
+    gap: 10px;
 }
 
 #fotos h2 {
@@ -138,13 +153,15 @@ nav a:hover {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Chela One', cursive; /* Fonte para o título de Fotos */
+
 }
 
 #fotos img {
-    width: 100%;
+    width: 48%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
 }
 
 footer {
@@ -249,7 +266,7 @@ footer a:hover {
 }
 
 
-    #pag-sobre .image {
-        margin-bottom: 20px; /
-    }
+#pag-sobre .image {
+    margin-bottom: 20px; /
+}
 
